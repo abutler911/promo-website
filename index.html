@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivatedBeth Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main-navigation">
+        <div class="container">
+        <div class="navbar-brand">
+            <a href="#" class="navbar-item"><h1 class="title">Activated Beth!</h1></a>
+            <div class="navbar-burger burger" data-target="navmenu" aria-label="menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="navbar-menu" id="navmenu">
+            <div class="navbar-start">
+                <a href="#" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">Library</a>
+            </div>
+            <div class="navbar-end">
+                <a href="#" class="navbar-item">Change Password</a>
+                <a href="#" class="navbar-item">Logout</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <script>
+        $(document).ready(function() {
+            $('.navbar-burger').click(function() {
+                $('#navmenu').toggleClass('is-active');
+                $('navbar-burger').toggleClass('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
