@@ -11,73 +11,95 @@
 </head>
 
 <body>
-    <nav class="navbar is-primary" role="navigation" aria-label="main-navigation">
-        <div class="container">
+    <nav class="navbar has-shadow is-info">
         <div class="navbar-brand">
-            <a href="#" class="navbar-item"><h1 class="title">Activated Beth!</h1></a>
-            <div class="navbar-burger burger" data-target="navmenu" aria-label="menu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </div>
+            <a href="#" class="navbar-item">
+                <h1 class="title">Activated Beth!</h1>
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
-        <div class="navbar-menu" id="navmenu">
+
+        <div class="navbar-menu" id="nav-links">
             <div class="navbar-start">
-                <a href="#" class="navbar-item">Home</a>
-                <a href="#" class="navbar-item">Library</a>
+                <a class="navbar-item">Video Library</a>
+                <a class="navbar-item">Peer Reviewed Studies</a>
             </div>
             <div class="navbar-end">
-                <a href="#" class="navbar-item">Change Password</a>
-                <a href="#" class="navbar-item">Logout</a>
+                <a class="navbar-item">Create Account</a>
+                <a class="navbar-item">Login</a>
             </div>
         </div>
-    </div>
     </nav>
 
-    <header class="section has-background-link py-4 has-text-white">
+    <!-- <div class="section pt-4 pb-0 is-white">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li><a class="has-text-grey">Page 1</a></li>
+                <li><a class="has-text-grey">Page 2</a></li>
+                <li><a class="is-active">Page 3</a></li>
+            </ul>
+        </nav>
+    </div> -->
+
+    <!-- Product Info -->
+    <section class="section">
         <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <span class="icon">
-                        <i class="fas fa-phone-volume"></i>
-                    </span>
-                    +1-801-555-1212
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet column is-3-desktop">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Protandim</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop subtitle">The Little Yellow Pill!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae reiciendis vero ad, impedit nemo harum voluptas provident rerum corporis necessitatibus!</p>
+                </div>
+
+                <div class="column is-6-tablet column is-5-desktop has-text-centered">
+                    <img src="resources/protandium-transparent.png" alt="protandum image" class="px-6">
+                </div>
+                <div class="column is-12-tablet column is-4-desktop">
+                    <div class="is-size-4 mb-4">$39.99</div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ullam?</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Product Details</a>
+                            </li>
+                            <li data-target="science">
+                                <a>The Science</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Product Details</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur laudantium eum? Blanditiis nulla natus illum ducimus dolor est praesentium.</p>
+                        </div>
+                        <div id="science" class="is-hidden">
+                            <h3 class="is-size-5 title">The Science</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur laudantium eum? Blanditiis nulla natus illum ducimus dolor est praesentium.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5-tablet">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, fuga soluta accusantium autem eaque delectus praesentium, repellendus deleniti consequuntur, quam qui labore accusamus unde error dolor modi. Inventore, eum ipsum.</p>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        $(document).ready(function() {
-            $('.navbar-burger').click(function() {
-                $('#navmenu').toggleClass('is-active');
-                $('navbar-burger').toggleClass('is-active');
-            });
-        });
-    </script>
-</body>
+    <script src="index.js"></script>
 </html>
